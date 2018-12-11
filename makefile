@@ -43,3 +43,6 @@ clean:
 	rm -f fl
 	rm -f *.cmo
 	rm -f *.cmi
+	rm -f prop_parser.output 
+	rm -f prop_lexer.ml
+	rm -f prop_parser.ml
