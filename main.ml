@@ -1,5 +1,6 @@
 open Prop_def;;
 open Fichier;;
+open Evaluation;;
  
 open List;;
 open Prop_lexer;;

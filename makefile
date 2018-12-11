@@ -6,7 +6,7 @@ CAMLYACC=ocamlyacc -v
 all: propnt
 
 propnt : prop_def.cmo  prop_parser.cmo prop_lexer.cmo main.cmo
-	$(CAMLC) -o test prop_def.cmo fichier.cmo   prop_lexer.cmo prop_parser.cmo main.cmo
+	$(CAMLC) -o test prop_def.cmo fichier.cmo evaluation.cmo  prop_lexer.cmo prop_parser.cmo main.cmo
 
 prop_parser.ml prop_parser.mli: prop_parser.mly
 	$(CAMLYACC) prop_parser.mly
@@ -20,6 +20,8 @@ prop_def.cmo prop_def.cmi: prop_def.ml
 fichier.cmo fichier.cmi: fichier.ml
 	$(CAMLC) -c  fichier.ml
 
+evaluation.cmo evaluation.cmi: evaluation.ml
+	$(CAMLC) -c  evaluation.ml
  
 
 prop_lexer.cmo: prop_lexer.ml prop_parser.cmi prop_def.cmi
