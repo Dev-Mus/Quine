@@ -33,7 +33,7 @@ prop_parser.cmo: prop_parser.ml prop_parser.cmi prop_def.cmi
 prop_parser.cmi: prop_parser.mli prop_def.cmi
 	$(CAMLC) -c prop_parser.mli
 
-main.cmo: main.ml prop_lexer.cmi prop_parser.cmi prop_def.cmi fichier.cmi 
+main.cmo: main.ml prop_lexer.cmi prop_parser.cmi prop_def.cmi fichier.cmi evaluation.cmi 
 	$(CAMLC) -c main.ml
 
 clean:
