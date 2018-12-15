@@ -20,7 +20,7 @@ prop_def.cmo prop_def.cmi: prop_def.ml
 fichier.cmo fichier.cmi: fichier.ml
 	$(CAMLC) -c  fichier.ml
 
-evaluation.cmo evaluation.cmi: evaluation.ml
+evaluation.cmo evaluation.cmi: evaluation.ml 
 	$(CAMLC) -c  evaluation.ml
  
 

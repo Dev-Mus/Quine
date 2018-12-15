@@ -20,7 +20,6 @@ let words = ref 0;;
 
 
 let rec print_term  term =
-
 match term with
 
 (Var x) ->  print_string x
