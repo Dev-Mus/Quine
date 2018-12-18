@@ -19,16 +19,16 @@ let boucle in_channel =
 			print_string " est la suivante : \n";
 				print_term (fnc p);
 			print_string "\n\n";
+			print_string "Ses valeurs de vérités sont les suivantes";
+			print_string "\n\n";
+	
 			print_list (evaluer (fnc p));
 			print_string "\n\n";
-			quein (evaluer (fnc p));
+			quine (evaluer (fnc p));
 			print_string "\n\n";			
 		  		in 
 					k p ;
 	exit 0;;
 
 boucle stdin;;
-
-
-
 
