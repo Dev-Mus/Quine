@@ -79,10 +79,11 @@ let rec recup p l =
 val recup : proposition -> proposition list -> proposition list = <fun>
 *)
 (***************************************** retourne le 1er element d'une liste **************************************************)
-let premier l = 
+let rec premier l = 
 	match l with 
 	|[]-> failwith "erreur : la liste est vide :o xD " 
-	|x::lr -> x
+	|[x]-> x
+	|x::lr -> premier lr
 ;;
 
 (*
